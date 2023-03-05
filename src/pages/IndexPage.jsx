@@ -9,7 +9,7 @@ function IndexPage() {
         <div className="container mx-auto py-16 px-4">
           <h1 className="text-4xl font-bold">Welcome to my portfolio!</h1>
           <hr className="border-gray-700 my-8" />
-          <div className="mt-4 flex items-center">
+          <div className="mt-4 flex items-center animate__animated animate__zoomIn">
             <img
               src={headshot}
               alt="Headshot"

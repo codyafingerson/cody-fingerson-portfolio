@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 html.dark {
-    --tw-bg-opacity: 1;
-    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
-    color: #fff;
-  }
-  
-  html.dark a {
-    color: #93c5fd;
-  }
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  color: #fff;
+}
+
+html.dark a {
+  color: #93c5fd;
+}
+
+::selection {
+  background-color: #5f7ea9;
+  color: #fff;
+}
