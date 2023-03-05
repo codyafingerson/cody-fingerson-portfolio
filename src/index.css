@@ -16,3 +16,11 @@ html.dark a {
   background-color: #5f7ea9;
   color: #fff;
 }
+
+.nav-menu {
+  z-index: 20;
+}
+
+.container {
+  z-index: 10;
+}
