@@ -5,7 +5,7 @@ import headshot from "../assets/headshot.png"
 function IndexPage() {
   return (
     <Container>
-      <div className="bg-gray-800 text-white">
+      <div className="bg-gray-800 text-whit z-10">
         <div className="container mx-auto py-16 px-4">
           <h1 className="text-4xl font-bold">Welcome to my portfolio!</h1>
           <hr className="border-gray-700 my-8" />
