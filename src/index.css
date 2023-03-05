@@ -7,7 +7,6 @@ html.dark {
   background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
   color: #fff;
 }
-
 html.dark a {
   color: #93c5fd;
 }
@@ -15,12 +14,4 @@ html.dark a {
 ::selection {
   background-color: #5f7ea9;
   color: #fff;
-}
-
-.nav-menu {
-  z-index: 20;
-}
-
-.container {
-  z-index: 10;
 }
