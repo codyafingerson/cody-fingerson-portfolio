@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 
 // Page importds
 import IndexPage from "./pages/IndexPage";
+import ProjectsPage from './pages/ProjectsPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<IndexPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
       </Router>
     </div>
