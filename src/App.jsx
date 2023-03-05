@@ -8,12 +8,14 @@ import IndexPage from "./pages/IndexPage";
 
 function App() {
   return (
-    <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<IndexPage />} />
-      </Routes>
-    </Router>
+    <div className="flex flex-col min-h-screen">
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<IndexPage />} />
+        </Routes>
+      </Router>
+    </div>
   )
 }
 
