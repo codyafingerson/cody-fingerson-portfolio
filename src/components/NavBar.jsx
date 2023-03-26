@@ -9,7 +9,7 @@ function NavBar() {
     };
 
     return (
-        <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 relative z-20">
+        <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 relative z-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between">
                 <Link to="/" className="flex items-center">
                     <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Cody Fingerson</span>
