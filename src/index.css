@@ -15,3 +15,7 @@ html.dark a {
   background-color: #5f7ea9;
   color: #fff;
 }
+
+#navbar-default {
+  z-index: 9999;
+}
