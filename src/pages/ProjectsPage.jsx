@@ -15,7 +15,7 @@ function ProjectsPage() {
             <div className="mt-4" key={index}>
               <ProjectCard projectTitle={project.title}
                 projectDescription={project.description}
-                projectUrl={project.url}
+                projectUrl={project.url ? project.url : null}
               />
             </div>
           ))}
