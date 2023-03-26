@@ -8,6 +8,10 @@ function NavBar() {
         setMenuOpen(!menuOpen);
     };
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 relative z-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between">
@@ -32,19 +36,19 @@ function NavBar() {
                 <div className={`w-full md:block md:w-auto ${menuOpen ? '' : 'hidden'}`} id="navbar-default">
                     <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                            <Link to="/" className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 sm:flex-row sm:space-x-8 sm:mt-0 sm:text-sm sm:font-medium sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700" aria-current="page">Home</Link>
+                            <Link to="/" className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 sm:flex-row sm:space-x-8 sm:mt-0 sm:text-sm sm:font-medium sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700" aria-current="page" onClick={closeMenu} >Home</Link>
                         </li>
                         <li>
-                            <Link to="/projects" className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 sm:flex-row sm:space-x-8 sm:mt-0 sm:text-sm sm:font-medium sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700">Projects</Link>
+                            <Link to="/projects" className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 sm:flex-row sm:space-x-8 sm:mt-0 sm:text-sm sm:font-medium sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700" onClick={closeMenu} >Projects</Link>
                         </li>
                         <li>
-                            <Link to="/resume" className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 sm:flex-row sm:space-x-8 sm:mt-0 sm:text-sm sm:font-medium sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700">Resume</Link>
+                            <Link to="/resume" className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 sm:flex-row sm:space-x-8 sm:mt-0 sm:text-sm sm:font-medium sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700" onClick={closeMenu} >Resume</Link>
                         </li>
                         <li>
-                            <Link to="/contact" className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 sm:flex-row sm:space-x-8 sm:mt-0 sm:text-sm sm:font-medium sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700">Contact</Link>
+                            <Link to="/contact" className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 sm:flex-row sm:space-x-8 sm:mt-0 sm:text-sm sm:font-medium sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700" onClick={closeMenu} >Contact</Link>
                         </li>
                         <li>
-                            <Link to="/about" className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 sm:flex-row sm:space-x-8 sm:mt-0 sm:text-sm sm:font-medium sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700">About</Link>
+                            <Link to="/about" className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 sm:flex-row sm:space-x-8 sm:mt-0 sm:text-sm sm:font-medium sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700" onClick={closeMenu} >About</Link>
                         </li>
                     </ul>
                 </div>
